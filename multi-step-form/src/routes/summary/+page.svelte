@@ -10,7 +10,9 @@
     $: total = planPrice + totalAddOnsPrice;
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col max-sm:w-9/10 
+max-sm:px-5 max-sm:py-7 max-sm:m-auto max-sm:rounded-xl max-sm:bg-white
+max-sm:-mt-0 max-sm:relative ">
     
     <Heading
         heading="Finishing up"
@@ -65,7 +67,7 @@
         </div>
     </div>
 </div>
-<div class="flex flex-row items-center justify-between mt-25 mb-6">
+<div class="flex flex-row items-center justify-between mt-25 mb-6 max-sm:p-5 max-sm:bg-white  max-sm:w-full max-sm:m-0">
     <div><a href="/add-ons">Go Back</a></div>
     <div><input type="submit" class="p-3 bg-blue-700 text-white rounded-md hover:cursor-pointer w-30" value="Next Step" on:click={ _ => goto("final")}></div>
 </div>
